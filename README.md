@@ -1,36 +1,54 @@
-## 📂 Component Structure
+# Emails Dashboard
 
-- `src/components/emails/EmailItem.jsx`  
-  Renders a single email row with status badges (Primary / Verified / Unverified) and a dropdown menu.
+This is a static UI assignment built with React and Tailwind CSS.
+It represents an email settings dashboard, where users can view and manage their email addresses and configure preferences.
 
-- `src/components/emails/EmailList.jsx`  
-  Wraps multiple `EmailItem` components inside a styled list.
+## Preview
 
-- `src/components/settings/EmailSettings.jsx`  
-  Provides settings for **Primary email**, **Backup email**, and a **Privacy toggle** with responsive layout.
+Click <a href="https://okta-assignment.vercel.app/">HERE</a> to see a live demo.
 
----
+## Features (UI only)
 
-## 💡 Implementation Notes
-- **Accessibility:** Semantic HTML (`<ul>`, `<li>`, ARIA roles) and keyboard-focusable dropdowns/switch.  
-- **Responsiveness:** Mobile-first, `flex-col` on small screens, `flex-row` on larger screens.  
-- **UI Library:** Built with [shadcn/ui](https://ui.shadcn.com/) + TailwindCSS.  
-- **Interactivity:** Dropdown menus, switch toggle, and state management with React hooks.  
+- Display multiple email addresses with status badges (Primary, Verified, Unverified)
+- Dropdown options for selecting Primary and Backup emails
+- Toggle option to keep email addresses private
+- Clean, modern layout styled with Tailwind CSS
 
----
+## Tech Stack
+
+- React – UI components
+- Tailwind CSS – Styling
+
+##  Project Structure
+
+okta-assignment/
+├── public/ # Static assets
+├── src/
+│ ├── components/
+│ │ ├── emails/ # Email-related components
+│ │ │ ├── EmailItem.jsx
+│ │ │ ├── EmailList.jsx
+│ │ ├── settings/ # Settings components
+│ │ │ └── EmailSettings.jsx
+│ │ └── ui/ # (Optional) Generic UI components
+│ ├── pages/
+│ │ └── PersonalAccountPage.jsx
+│ ├── App.css
+│ ├── App.jsx # Root app component
+│ ├── main.jsx # Entry point
+│ └── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 
 
-## 🚀 Steps to Run the Project
 
+##  Installation & Setup
+
+1. Clone the repository:
    ```bash
-   
-   cd email-settings-ui
-
-   npm install
-
-   npm run dev
-
-   The app will be available at http://localhost:5173
-
-
-
+   git clone https://github.com/your-username/emails-dashboard.git
+   cd emails-dashboard
+2. npm install
+3. npm run dev
+4. Open http://localhost:5173 in your browser.
